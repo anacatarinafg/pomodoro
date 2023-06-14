@@ -12,8 +12,8 @@ html,
 body {
     width: 100%;
     height: 100vh;
-    background-color: #dddddd;
-    color: #141414;
+    background-color: #141414;
+    color: #8A8A8A;
     overflow: hidden;
     font-family: 'Bona Nova', serif;
 }
@@ -23,103 +23,102 @@ button {
     cursor: pointer;
 }
 
-.navbar {
-    width: 95%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-top: 1px solid #000;
-    padding: .25em 0;
-    margin-top: 20px;
-}
-
-.navbar__image {
-    width: 30px;
-}
-
 main {
-    width: 95%;
-    height: 90vh;
-    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .pomodoro__buttons {
-    width: 30%;
+    width: 100vw;
+    height: 200px;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .pomodoro__buttonsBox {
-    width: 150px;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    gap: 3em;
+    gap: 3.5em;
+    font-size: 26px;
+}
+
+.button__timer,
+.button__short,
+.button__long {
+    border: 1px solid;
+    padding: .25em;
+    transition: 250ms;
+}
+
+.has__state:focus {
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .active {
-    background-color: #141414;
-    color: #dddddd;
-}
-
-.has__state {
-    text-transform: lowercase;
-    border-radius: 25px;
-    padding: .5em;
-    font-size: 22px;
-    border: 1px solid #c7c7c7;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .pomodoro__watch {
-    width: 70%;
-    width: 750px;
-    height: 700px;
-    background: url(./assets/bomb.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
+    width: 990px;
+    height: 550px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 30px;
+    justify-content: center;
+    border: 15px solid #8A8A8A;
+}
+
+.watch__box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .watch__round,
-.watch__time,
 .watch__start {
-    text-transform: lowercase;
-    font-size: 18px;
-}
-
-.watch__round {
-    padding: .25em;
+    font-size: 26px;
 }
 
 .watch__round span {
-    font-weight: 600;
-    font-size: 22px;
     border-radius: 50%;
-    border: 1px solid #c7c7c7;
+    border: 1px solid;
     padding: 0 .25em;
-    margin-left: 3px;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 32px;
 }
 
 .watch__time {
-    font-size: 72px;
+    font-family: 'Bona Nova';
+    font-weight: 400;
+    font-size: 292px;
+    margin-bottom: 90px;
+}
+
+.pomodoro__start {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .watch__start {
-    margin-bottom: 100px;
-    font-size: 26px;
-    border: 1px solid #c7c7c7;
+    padding: .25em;
+    border: 1px solid;
     transition: 250ms;
 }
+
 .watch__start:hover {
-    background-color: #c7c7c7;
+    color: #141414;
+    background-color: #8A8A8A;
 }

@@ -5,15 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/ana-goncalves.png" type="image/x-icon">
     <title>Pomodoro timer</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <img src="./assets/ana-goncalves.png" alt="ana-catarina-logo" class="navbar__image">
-        </nav>
-    </header>
     <main>
         <section class="pomodoro__buttons">
             <div class="pomodoro__buttonsBox">
@@ -23,8 +19,12 @@
             </div>
         </section>
         <section class="pomodoro__watch">
-            <p class="watch__round">round<span> 1</span></p>
-            <h1 class="watch__time">25 : 00</h1>
+            <div class="watch__box">
+                <p class="watch__round">round<span> 1</span></p>
+                <h1 class="watch__time">25 : 00</h1>
+            </div>
+        </section>
+        <section class="pomodoro__start">
             <button class="watch__start">start</button>
         </section>
     </main>
