@@ -54,11 +54,6 @@ main {
     transition: 250ms;
 }
 
-.has__state:focus {
-    border: 1px solid #fff;
-    color: #fff;
-}
-
 .active {
     border: 1px solid #fff;
     color: #fff;
@@ -121,4 +116,30 @@ main {
 .watch__start:hover {
     color: #141414;
     background-color: #8A8A8A;
+}
+
+
+@media (max-width: 767px) {
+    main {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .pomodoro__watch {
+        width: 80%;
+        height: 50%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 15px solid #8A8A8A;
+    }
+    .watch__time {
+        font-family: 'Bona Nova';
+        font-weight: 400;
+        font-size: 92px;
+    }
 }
