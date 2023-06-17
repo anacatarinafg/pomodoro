@@ -67,7 +67,8 @@ main {
     align-items: center;
     justify-content: center;
     border: 15px solid #8A8A8A;
-}
+    background-clip: content-box;
+  }
 
 .watch__box {
     height: 100%;
@@ -144,3 +145,4 @@ main {
     }
 }
 /* DOING ANIMATION */
+
