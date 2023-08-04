@@ -161,3 +161,5 @@ main {
         font-size: 92px;
     }
 }
+
+@media (max-width: 467px) {}
